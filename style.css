@@ -13,14 +13,13 @@ body{
 .container{
 
     width: 90%;
-    min-width: 300px;
-    max-width: 700px;
     margin: 100px auto;
     
 }
 .container h1{
     font-weight: 500;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
 }
 .container h1 span{
     color: #019f55;
@@ -30,6 +29,7 @@ body{
 .display{
     display: flex;
     width: 100%;
+    max-width: 600px;
     margin-top: 50px;
     margin-bottom: 30px;
     background: #fff;
@@ -74,4 +74,41 @@ body{
 
 .container button:hover {
     background-color: #017a44;
+}
+
+/* media queries  */
+@media screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+        padding: 40px;
+    }
+    .container h1{
+        font-size: 1.8rem;
+    }
+    .display{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    }
+    .display input{
+        width: 80%;
+        font-size: 22px;
+        padding-left: 10px;
+        
+    }
+    .display img{
+        width: 25px;
+    }
+    .container button{
+        padding: 10px ;
+        font-size: 18px;
+        
+    }
+    .container button img{
+        width: 20px;
+    }
 }
