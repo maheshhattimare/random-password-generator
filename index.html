@@ -5,47 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7372d0d14b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Generate a <br/><span>Random Password</span><span id="emoji">&#128526;</span></h1>
-        <div class="display">
-            <div class="input-container">
-                <input type="text" id="password" placeholder="Password" readonly>
-                <div id="cross-icon"><i class="fa-solid fa-xmark"></i></div>
-                <img src="images/copy.png" id="copy-btn">
+    <div class="card">
+        <h1>Password Generator</h1>
+
+        <div class="container">
+            <input type="text" id="input-box" placeholder="password" readonly>
+            <p class="message" id="copy-message">Password copied to clipboard!</p>
+
+            <div class="pass-length-box">
+                <div>
+                    <p>LENGTH</p>
+                <span id="length-value">8</span>
+                </div>
+                <input type="range" id="length-slider" min="1" max="32" value="8">
             </div>
-            <button id="generateBtn"><img src="images/generate.png">Generate</button>
+
+            <div class="pass-settings">
+                <p>SETTINGS</p>
+                <ul class="options">
+                    <li class="option">
+                        <div><input type="checkbox" id="uppercase" checked></div>
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </li>
+
+                    <li class="option">
+                        <div><input type="checkbox" id="lowercase" checked></div>
+                        <label for="lowercase">lowercase (a-z)</label>
+                    </li>
+
+                    <li class="option">
+                        <div><input type="checkbox" id="number" checked></div>
+                        <label for="number">Number(0-9)</label>
+                    </li>
+
+                    <li class="option">
+                        <div><input type="checkbox" id="symbol" checked></div>
+                        <label for="symbol">Symbol (#@&)</label>
+                    </li>
+                </ul>
+            </div>
+            <p class="warning-message" id="warning-message">At least one option must be selected!</p>
+            <button id="generate-btn">Generate</button>
+
         </div>
-
-        <div class="check-boxes">
-            <div>
-                <input type="checkbox" id="check-box1" checked >
-                <label for="check-box1">ABC</label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check-box2" checked>
-                <label for="check-box2">abc</label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check-box3" checked>
-                <label for="check-box3">123</label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check-box4" checked>
-                <label for="check-box4">#$*</label>
-            </div>
-        </div>
-
-        <p id="message">*Please select at least one checkbox</p>
-
-        
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>

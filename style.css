@@ -1,11 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --bg-color: #e0dbdb;
+    --card-color: #0b0f31;
+    --text-color:#fff;
+    --sec-bg-color:#1d2140;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' ,  sans-serif;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    min-width: 100vw;
+    background-color: var(--bg-color);
+    position: relative;
+}
+.card{
+    width: 90%;
+    max-width: 450px;
+    background: var(--card-color);
+    color: #fff;
+    text-align: center;
+    padding: 40px 35px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.container{
+    padding: 15px;
+    
+}
+.container input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    background: var(--sec-bg-color);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.message {
+    display: none;
+    color: green;
+    font-size: 13px;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.message.show {
+    display: block;
+    opacity: 1;
+}
+.pass-length-box div{
+    display: flex;
+    font-size: 13px;
+    margin: 0 6px 2px 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pass-length-box input{
+    width: 100%;
+    padding: 20px;
+    background: var(--sec-bg-color);
+    appearance: none;
+}
+.pass-length-box input::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: grey;
+    border-radius: 5px;
+}
+.pass-length-box input::-webkit-slider-thumb{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -7px; 
+}
+.pass-settings p{
+    text-align: left;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+
+}
+.pass-settings .options{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.pass-settings .options .option{
+    background-color: var(--sec-bg-color);
+    margin-bottom: 8px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    
+    justify-content: space-between;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+.pass-settings .options .option input{
+    height: 18px;
+    width: 18px;
+    margin-top: 8px;
+    outline: 0;
+    border: 0;
+    
+}
+.pass-settings .options .option label{
+    white-space: nowrap;
+    font-size: 16px;
+    cursor: pointer;
+}
+.warning-message{
+    display: none;
+    color: orange;
+    font-size: 13px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+#generate-btn {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(35deg, #60efff, #0061ff);
+    transition:all 0.3s ease; 
+}
+#generate-btn:hover {
+    background: linear-gradient(35deg, #0061ff, #60efff);
+    padding: 12px 0;
+}
+/* media queries */
+@media screen and (max-width: 600px){
+    .card{
+        padding: 25px 15px;
+    }
+    .card h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body{
     height: 100vh;
     background: #002339;
@@ -78,7 +256,6 @@ body{
 }
 #cross-icon i{
     font-size: 18px;
-    /* padding: 7px; */
     color: green;
 }
 #cross-icon:hover{
@@ -222,4 +399,4 @@ body{
     }
 
 }
-
+ */
