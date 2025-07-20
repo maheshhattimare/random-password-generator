@@ -1,42 +1,54 @@
-# Random Password Generator
+# 🔐 SecurePassForge - Advanced Password Generator
 
-A simple and interactive Random Password Generator application built with HTML, CSS, and JavaScript. This app allows users to generate new passwords, modify them, and copy the generated passwords.
+A modern, stylish, and secure password generator built using React and Tailwind CSS.
 
-## Visit the Website
+## 🔗 Live Demo
 
-[Random Password Generator](https://maheshhattimare.github.io/random-password-generator/)
+[SecurePassForge](https://secure-pass-forge.vercel.app/)
 
-## Features
+## ✨ Features
 
-- User-friendly interface
-- Generate strong passwords
-- Copy passwords to clipboard
+- Generate strong and secure passwords
+- One-click copy to clipboard
+- Minimalistic and stylish UI
+- Fully responsive design
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-- HTML
-- CSS
+- React
+- Tailwind CSS
 - JavaScript
 
-## Screenshots
+## 🖼️ Screenshots
 
 ### Interface
-![Interface](./images/screenshot1.png)
 
-## Installation
+![Interface](./public/screenshots/interface.png)
+
+## 🚀 Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/maheshhattimare/random-password-generator.git
-    ```
+
+   ```bash
+   git clone https://github.com/maheshhattimare/SecurePassForge.git
+   ```
+
 2. Navigate to the project directory:
-    ```bash
-    cd random-password-generator
-    ```
-3. Open `index.html` in your web browser to start the application.
 
-## Usage
+   ```bash
+   cd SecurePassForge
+   ```
 
-1. Open the `index.html` file in your preferred web browser.
-2. Click on the "Generate Password" button to create a new password.
-3. Copy the generated password by clicking on the "Copy" button.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:5173` to use the app.

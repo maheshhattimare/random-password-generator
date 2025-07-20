@@ -1,56 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="card">
-        <h1>Password Generator</h1>
-
-        <div class="container">
-            <input type="text" id="input-box" placeholder="password" readonly>
-            <p class="message" id="copy-message">Password copied to clipboard!</p>
-
-            <div class="pass-length-box">
-                <div>
-                    <p>LENGTH</p>
-                <span id="length-value">8</span>
-                </div>
-                <input type="range" id="length-slider" min="1" max="32" value="8">
-            </div>
-
-            <div class="pass-settings">
-                <p>SETTINGS</p>
-                <ul class="options">
-                    <li class="option">
-                        <div><input type="checkbox" id="uppercase" checked></div>
-                        <label for="uppercase">Uppercase (A-Z)</label>
-                    </li>
-
-                    <li class="option">
-                        <div><input type="checkbox" id="lowercase" checked></div>
-                        <label for="lowercase">lowercase (a-z)</label>
-                    </li>
-
-                    <li class="option">
-                        <div><input type="checkbox" id="number" checked></div>
-                        <label for="number">Number(0-9)</label>
-                    </li>
-
-                    <li class="option">
-                        <div><input type="checkbox" id="symbol" checked></div>
-                        <label for="symbol">Symbol (#@&)</label>
-                    </li>
-                </ul>
-            </div>
-            <p class="warning-message" id="warning-message">At least one option must be selected!</p>
-            <button id="generate-btn">Generate</button>
-
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecurePass Forge - Advanced Password Generator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
